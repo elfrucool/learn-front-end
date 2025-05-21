@@ -5,7 +5,7 @@
   env.GREET = "devenv";
 
   # https://devenv.sh/packages/
-  packages = [ pkgs.nodejs pkgs.yarn ];
+  packages = [ pkgs.nodejs pkgs.yarn pkgs.eslint ];
 
   languages = {
     # nodejs.enable = true;
