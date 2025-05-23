@@ -3,14 +3,14 @@
   - Set up each package with its own package.json and tsconfig.json
   - Configure workspace dependencies between packages
 2. Enhance the basic React application:
+  - Add a login-page, handle state of being login/not-login switching between main page and login page
   - Implement routing with react-router-dom
   - Set up state management (Context API, Redux, Zustand)
   - Create reusable components in the shared package
 3. Add styling and UI framework:
   - ✅ Add minimal CSS
   - ✅ Integrate Material UI (referenced in your project description)
-  - Set up CSS/SCSS modules or styled-components - maybe not needed
-  - ⌛ Create a theme and design system
+  - ✅ Create a theme and design system
 4. Implement authentication features:
   - Build login/registration forms
   - Set up JWT token management
