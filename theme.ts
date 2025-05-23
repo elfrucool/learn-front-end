@@ -43,9 +43,11 @@ const theme = createTheme({
         ].join(','),
         h1: {
             fontSize: '2.5rem',
+            padding: '1rem',
             fontWeight: 500,
             backgroundColor: '#f9f9fa',
             borderBottom: '1px solid #ddd',
+            borderRight: '1px solid #ddd',
             borderRadius: '8px',
         },
         h2: {
