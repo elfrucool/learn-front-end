@@ -1,0 +1,4 @@
+# Work Journal - 2025-05-23
+
+## Today's Progress
+- Played along with Material UI styles, theme, and different ways to stile things.
