@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "target": "ES2024",
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "jsx": "react-jsx",
+        "allowJs": true,
+        "strict": true,
+        "outDir": "dist",
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": false,
+        "noImplicitAny": true,
+        "forceConsistentCasingInFileNames": true,
+        "baseUrl": ".",
+        "paths": {
+            "@learn-front-end/*": [ "packages/*/src" ], 
+        },
+    },
+    "include": [
+        "./*.js",
+        "./*.jsx",
+        "./*.ts",
+        "./*.tsx",
+        "packages/**/*.ts",
+        "packages/**/*.tsx",
+    ],
+    "exclude": ["node_modules", ".git", ".devenv", ".direnv"]
+}
