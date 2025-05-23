@@ -1,0 +1,25 @@
+# Work Journal - 2025-05-22
+
+## Today's Progress
+- Started with a clean slate after removing almost everything from the project
+- Setup dependencies for react application with typescript, but main entry point was javascript, not typescript yet
+- Created basic html template
+- Setup webpack for building react application but for javascript, not typescript yet
+- Created basic index.js react file with minimal React component
+- Deal with webpack loading index.js + JSX syntax, the solution: use ts-loader even for javascript, it implied;
+  - Create minimal tsconfig.json for use with javascript + JSX syntax
+  - updat webpack config
+- Setup build and start npm scripts
+- Tested build and start scripts
+- Migrate from javascript to typescript:
+  - renamed index.js to index.ts, didn't work until I renamed it to index.tsx
+  -  updated index.tsx syntax (from javascript to typescript)
+  - updated tsconfig.json to use typescript
+  - updated webpack config to use typescript
+  - tested again
+- Created next-steps-2025-05-22.md file with next steps to follow:
+  - tried SWE-1 Windsurf agent exploring what it answers about Material UI
+- Added minimal CSS
+
+## Next Steps
+- See next-steps-2025-05-22.md
