@@ -1,18 +1,50 @@
-# Modern Front-End Development Learning Project
+# 🎓 Front-End Learning Journey
+
+> **Note**: This is a learning project focused on the **process** of building modern front-end applications. The journey and skills gained are more valuable than the final output.
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![MUI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)](https://mui.com/)
 [![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=webpack&logoColor=black)](https://webpack.js.org/)
 
-## Overview
-This project serves as a comprehensive learning environment for mastering modern front-end development technologies and practices. By building a real application, I'll gain hands-on experience with React, TypeScript, micro-frontends, and modern build toolchains.
+## 🧭 Learning Philosophy
 
-## Learning Objectives
-- Develop a production-quality React application using TypeScript
-- Understand and implement micro-frontend architecture
-- Master modern build and deployment pipelines
-- Create a responsive UI with Material UI and Emotion
+This project is first and foremost a **learning journey**. The focus is on understanding concepts, making mistakes, and growing as a developer. The code you'll find here represents my learning process, complete with experiments, refactoring, and continuous improvement.
+
+### Why This Project Exists
+- To deeply understand modern front-end development through hands-on practice
+- To document the learning process, including challenges and solutions
+- To build a reference implementation that evolves with my growing knowledge
+- To experiment with different patterns and approaches in a real-world context
+
+### What You'll Find Here
+- Progress through various stages of front-end development learning
+- Real-world problem solving and decision making
+- Evolving architecture and code quality improvements
+- Documentation of both successes and learning moments
+
+## 🎯 Learning Objectives
+
+Through this project, I aim to:
+
+### Core Development Skills
+- Build a deep understanding of React and TypeScript
+- Learn to make informed architectural decisions
+- Develop proficiency with modern tooling and workflows
+- Practice clean code principles and patterns
+
+### Process-Oriented Goals
+- Document the learning journey and decision-making process
+- Embrace and learn from mistakes
+- Iteratively improve code quality and architecture
+- Build a growth mindset through hands-on practice
+
+### Technical Focus Areas
+- React patterns and best practices
+- TypeScript type system mastery
+- State management strategies
+- Performance optimization techniques
+- Testing methodologies
 
 ## Technologies
 
