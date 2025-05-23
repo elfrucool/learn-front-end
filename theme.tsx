@@ -22,7 +22,7 @@ const theme = createTheme({
             main: '#ed6c02',
         },
         info: {
-            main: '##0288d1',
+            main: '#0288d1',
         },
         success: {
             main: '#2e7d32',
@@ -44,10 +44,25 @@ const theme = createTheme({
         h1: {
             fontSize: '2.5rem',
             fontWeight: 500,
+            backgroundColor: '#f9f9fa',
+            borderBottom: '1px solid #ddd',
+            borderRadius: '8px',
         },
         h2: {
             fontSize: '2rem',
             fontWeight: 500,
+        },
+        body1: {
+            padding: '1rem',
+            color: 'secondary.main',
+            backgroundColor: 'white',
+            borderRadius: '8px'
+        },
+        body2: {
+            margin: '1rem',
+            padding: '1rem',
+            boxShadow: '0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12)',
+            borderRadius: '8px',
         },
         // Add more typography variants as needed
     },
