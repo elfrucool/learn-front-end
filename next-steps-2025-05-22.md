@@ -7,9 +7,10 @@
   - Set up state management (Context API, Redux, Zustand)
   - Create reusable components in the shared package
 3. Add styling and UI framework:
-  - Integrate Material UI (referenced in your project description)
-  - Set up CSS/SCSS modules or styled-components
-  - Create a theme and design system
+  - ✅ Add minimal CSS
+  - ✅ Integrate Material UI (referenced in your project description)
+  - Set up CSS/SCSS modules or styled-components - maybe not needed
+  - ⌛ Create a theme and design system
 4. Implement authentication features:
   - Build login/registration forms
   - Set up JWT token management

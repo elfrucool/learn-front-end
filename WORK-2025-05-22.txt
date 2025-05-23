@@ -20,6 +20,7 @@
 - Created next-steps-2025-05-22.md file with next steps to follow:
   - tried SWE-1 Windsurf agent exploring what it answers about Material UI
 - Added minimal CSS
+- Added minimal Material UI, setup, theme and usage
 
 ## Next Steps
 - See next-steps-2025-05-22.md

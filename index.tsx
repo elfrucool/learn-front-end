@@ -1,23 +1,18 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import './style.css';
+import App from './App';
 
-const App: React.FC = () => {
-    return (
-        <div className='container'>
-            <header className="header">
-                <h1>Hello, World!</h1>
-            </header>
-            <main>
-                <h2>Welcome to the Learning Frontend Journey</h2>
-                <p>This is a minimal CSS setup with some basic styling</p>
-                <button className="button">Click me</button>
-            </main>
-        </div>
-    );
-};
+// Import the Roboto font
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
 const container = document.getElementById('root');
 if (!container) throw new Error('Failed to find the root element');
 const root = createRoot(container);
-root.render(<App />);
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+);
