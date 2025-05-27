@@ -14,23 +14,25 @@ import {
   } from '@mui/material';
 import { LockOutlined } from '@mui/icons-material';
 import React, { useState } from 'react';
+import { useNavigate} from 'react-router-dom';
+import { useAuth } from './AuthContext';
 import theme from './theme';
 
 
-interface LoginProps {
-    onLoginSuccess: () => void;
-}
 
-
-const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
+const Login: React.FC = () => {
     const [remember, setRemember] = useState<boolean>(false);
     const [email, setEmail] = useState<string>('');
     const [password, setPassword] = useState<string>('');
+    const navigate = useNavigate();
+    const { login } = useAuth();
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         if (email != '' && password != '') {
-            onLoginSuccess();
+            const fakeToken = 'fake-jwt-token';
+            login(fakeToken);
+            navigate('/');
         }
     };
 

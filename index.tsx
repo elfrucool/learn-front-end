@@ -1,6 +1,8 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './App';
+import { BrowserRouter } from 'react-router-dom';
+import { AuthProvider } from './AuthContext';
+import Routes  from './Routes';
 
 // Import the Roboto font
 import '@fontsource/roboto/300.css';
@@ -13,6 +15,10 @@ if (!container) throw new Error('Failed to find the root element');
 const root = createRoot(container);
 root.render(
     <React.StrictMode>
-        <App />
+        <BrowserRouter>
+            <AuthProvider>
+                <Routes/>
+            </AuthProvider>
+        </BrowserRouter>
     </React.StrictMode>
 );

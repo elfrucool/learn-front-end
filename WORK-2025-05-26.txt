@@ -1,0 +1,5 @@
+# Work Journal - 2025-05-26
+
+## Today's Progress
+- Implemented routing with react-router-dom:
+    - all wored except reload /login path or entering it directly on the browser
