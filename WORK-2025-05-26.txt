@@ -3,3 +3,6 @@
 ## Today's Progress
 - Implemented routing with react-router-dom:
     - all wored except reload /login path or entering it directly on the browser
+- Set up state management:
+    - Started with basic Context API
+    - Then moved to MobX

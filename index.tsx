@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import { AuthProvider } from './AuthContext';
+import { StoreProvider } from './stores';
 import Routes  from './Routes';
 
 // Import the Roboto font
@@ -16,9 +16,9 @@ const root = createRoot(container);
 root.render(
     <React.StrictMode>
         <BrowserRouter>
-            <AuthProvider>
+            <StoreProvider>
                 <Routes/>
-            </AuthProvider>
+            </StoreProvider>
         </BrowserRouter>
     </React.StrictMode>
 );
