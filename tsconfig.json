@@ -13,7 +13,7 @@
         "noImplicitAny": true,
         "outDir": "dist",
         "paths": {
-            "@learn-front-end/*": [ "packages/*/src" ], 
+            "@/*": [ "src/*" ], 
         },
         "skipLibCheck": true,
         "sourceMap": false,
@@ -21,12 +21,14 @@
         "target": "ES2024"
     },
     "include": [
-        "./*.js",
-        "./*.jsx",
-        "./*.ts",
-        "./*.tsx",
+        // "./*.js",
+        // "./*.jsx",
+        // "./*.ts",
+        // "./*.tsx",
+        "src/**/*.ts",
+        "src/**/*.tsx",
         "packages/**/*.ts",
         "packages/**/*.tsx",
     ],
-    "exclude": ["node_modules", ".git", ".devenv", ".direnv"]
+    "exclude": ["node_modules", ".git", ".devenv", ".direnv"] // ? public tist public assets?
 }

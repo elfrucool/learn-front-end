@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: './index.tsx',
+    entry: './src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js',
@@ -33,12 +33,13 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
         alias: {
-            '@learn-front-end': path.resolve(__dirname, 'packages/'),
+            '@packages': path.resolve(__dirname, 'packages/'), // for future use
+            '@': path.resolve(__dirname, 'src/'), // how it differs from tsconfig.json @/* ? can I just use @ instead of @src ?
         },
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './index.html',
+            template: './public/index.html',
         }),
     ],
     devServer: {

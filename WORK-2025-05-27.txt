@@ -1,0 +1,6 @@
+# Work Journal - 2025-05-27
+
+## Today's Progress
+
+- Tried micro-services-architecture through enabling module-federation, unfortunately the step
+  was too big, so I had to revert all changes

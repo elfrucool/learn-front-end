@@ -2,7 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { StoreProvider } from './stores';
-import Routes  from './Routes';
+import Routes  from './routes/Routes';
 
 // Import the Roboto font
 import '@fontsource/roboto/300.css';

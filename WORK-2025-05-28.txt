@@ -1,0 +1,24 @@
+# Work Journal - 2025-05-28
+
+## Today's Progress
+
+- Started again from latest stable position
+- Added module-federation dependencies in advance: npm install --save-dev webpack-merge @module-federation/enhanced
+- Reorganize source files into folders
+
+--- This way ---
+src/ (directly, will contain index.tsx)
+(src/components) <- not needed yet but will create anyways
+src/pages (will contain Login.tsx, App.tsx)
+src/routes (will contain Routes.tsx and ProtectedRoute.tsx --- I don't know if I will add index.ts to reexport components)
+src/stores (the same contents as current ./stores)
+src/theme (will contain theme.ts renamed as index.ts)
+(src/types) <- not needed yet but will create anyways
+(src/utils) <- not needed yet but will create anyways
+
+public/ (will contain index.html)
+
+assets/
+(assets/images) <- not needed yet but will create anyways
+(assets/styles) <- not needed yet but will create anyways
+---
