@@ -35,6 +35,12 @@ module.exports = {
         alias: {
             '@packages': path.resolve(__dirname, 'packages/'), // for future use
             '@': path.resolve(__dirname, 'src/'), // how it differs from tsconfig.json @/* ? can I just use @ instead of @src ?
+
+            // workspace aliases
+            'shared': path.resolve(__dirname, 'packages/shared/src'),
+            'auth': path.resolve(__dirname, 'packages/auth/src'),
+            'dashboard': path.resolve(__dirname, 'packages/dashboard/src'),
+            'container': path.resolve(__dirname, 'packages/container/src'),
         },
     },
     plugins: [
