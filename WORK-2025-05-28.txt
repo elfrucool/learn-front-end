@@ -2,9 +2,11 @@
 
 ## Today's Progress
 
-- Started again from latest stable position
-- Added module-federation dependencies in advance: npm install --save-dev webpack-merge @module-federation/enhanced
-- Reorganize source files into folders
+- ✅ Started again from latest stable position
+- ✅ Added module-federation dependencies in advance: npm install --save-dev webpack-merge @module-federation/enhanced
+- ✅ Reorganize source files into folders
+- ✅ started micro-frontend architecture by splitting the application into multiple modules
+- [WIP] followed the build-time approach
 
 --- This way ---
 src/ (directly, will contain index.tsx)
