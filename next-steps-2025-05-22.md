@@ -1,7 +1,8 @@
 1. Set up the monorepo package structure:
-  - Create the packages directory with the planned modules (container, auth, dashboard, shared)
-  - Set up each package with its own package.json and tsconfig.json
-  - Configure workspace dependencies between packages
+  - ✅ Create the packages directory with the planned modules (container, auth, dashboard, shared)
+  - ✅ Set up each package with its own package.json and tsconfig.json
+  - ✅ Configure workspace dependencies between packages
+  - implement micro-frontend architecture following build-time approach
 2. Enhance the basic React application:
   - ✅ Add a login-page, handle state of being login/not-login switching between main page and login page
   - ✅ Implement routing with react-router-dom
