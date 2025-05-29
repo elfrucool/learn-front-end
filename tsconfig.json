@@ -1,34 +1,26 @@
 {
-    "compilerOptions": {
-        "allowJs": true,
-        "allowSyntheticDefaultImports": true,
-        "baseUrl": ".",
-        "declaration": true,
-        "declarationMap": true,
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "jsx": "react-jsx",
-        "module": "ESNext",
-        "moduleResolution": "bundler",
-        "noImplicitAny": true,
-        "outDir": "dist",
-        "paths": {
-            "@/*": [ "src/*" ], 
-        },
-        "skipLibCheck": true,
-        "sourceMap": false,
-        "strict": true,
-        "target": "ES2024"
-    },
-    "include": [
-        // "./*.js",
-        // "./*.jsx",
-        // "./*.ts",
-        // "./*.tsx",
-        "src/**/*.ts",
-        "src/**/*.tsx",
-        "packages/**/*.ts",
-        "packages/**/*.tsx",
-    ],
-    "exclude": ["node_modules", ".git", ".devenv", ".direnv"] // ? public tist public assets?
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "dist",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  },
+  "include": [
+  ],
+  "exclude": [
+    "node_modules",
+    ".git",
+    ".devenv",
+    ".direnv"
+  ],
+  "references": [
+    { "path": "./packages/auth" },
+    { "path": "./packages/dashboard" },
+    { "path": "./packages/shared" },
+    { "path": "./packages/container" }
+  ]
 }
