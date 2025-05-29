@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import { StoreProvider } from './stores';
+import { StoreProvider } from 'shared/stores';
 import Routes  from './routes/Routes';
 
 // Import the Roboto font
@@ -22,3 +22,6 @@ root.render(
         </BrowserRouter>
     </React.StrictMode>
 );
+
+export { default as ProtectedRoute } from './routes/ProtectedRoute';
+export { default as Routes } from './routes/Routes';

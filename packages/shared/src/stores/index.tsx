@@ -1,3 +1,4 @@
+import React from 'react';
 import { createContext, useContext, ReactNode } from 'react';
 import AuthStore from './authStore';
 import ClicksStore from './clicksStore';

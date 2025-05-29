@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ThemeProvider, CssBaseline, Container, Typography, Button, Box} from '@mui/material';
 import { observer } from 'mobx-react-lite';
-import { useStores } from '@/stores';
-import { useNavigate } from 'react-router-dom';
-import theme from '@/theme';
+import { useStores } from 'shared/stores';
+import theme from 'shared/theme';
 
 const App: React.FC = observer(() => {
     const { authStore, clicksStore } = useStores();

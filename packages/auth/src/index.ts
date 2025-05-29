@@ -1,1 +1,1 @@
-// dummy file to act as main entry point for this micro FE
+export { default as Login } from './pages/Login';

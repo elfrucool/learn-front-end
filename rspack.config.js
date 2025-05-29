@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: './packages/dashboard/src/index.tsx',
+    entry: './packages/container/src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js',
@@ -34,7 +34,6 @@ module.exports = {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
         alias: {
             '@packages': path.resolve(__dirname, 'packages/'), // for future use
-            '@': path.resolve(__dirname, 'src/'), // how it differs from tsconfig.json @/* ? can I just use @ instead of @src ?
 
             // workspace aliases
             'shared': path.resolve(__dirname, 'packages/shared/src'),
