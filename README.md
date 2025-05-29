@@ -5,7 +5,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![MUI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)](https://mui.com/)
-[![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=webpack&logoColor=black)](https://webpack.js.org/)
+[![Rspack](https://img.shields.io/badge/Rspack-8DD6F9?style=for-the-badge&logo=rspack&logoColor=black)](https://www.rspack.dev/)
 
 ## 🧭 Learning Philosophy
 
@@ -52,188 +52,85 @@ Through this project, I aim to:
 - **React**: A JavaScript library for building user interfaces
 - **TypeScript**: JavaScript with syntax for types
 - **Node.js**: JavaScript runtime for backend services
-- **MobX**: Scalable state management library
+- **MobX**: ✅ Scalable state management library
 
 ### Architecture
-- **Micro-frontends**: Architecture pattern for frontend applications
-- **React Micro Container**: Library for managing micro-frontend components
+- **Conventional Src Structure**: ✅ Standard project organization with src directory
+- **Micro-frontends**: Architecture pattern for frontend applications (planned)
 
 ### Build & Deployment
-- **Webpack**: Module bundler for JavaScript applications
-- **GitHub Actions**: CI/CD workflow automation
-- **Jest**: JavaScript testing framework
+- **Rspack**: ✅ Fast module bundler for JavaScript applications (migrated from Webpack)
+- **GitHub Actions**: CI/CD workflow automation (planned)
+- **Jest**: JavaScript testing framework (planned)
 
 ### UI Framework
-- **Material UI**: React components implementing Google's Material Design
-- **Emotion**: CSS-in-JS library for styling React components
+- **Material UI**: ✅ React components implementing Google's Material Design
+- **Emotion**: CSS-in-JS library for styling React components (planned)
 
-## Project Structure
+## Learning Path (Actual Progress)
 
-```
-frontend-learning-project/
-├── packages/                # Monorepo for micro-frontends
-│   ├── container/           # Main application shell
-│   ├── auth/                # Authentication micro-frontend
-│   ├── dashboard/           # Dashboard micro-frontend
-│   └── shared/              # Shared components and utilities
-├── config/                  # Configuration files
-│   ├── webpack/             # Webpack configuration
-│   └── typescript/          # TypeScript configuration
-├── .github/                 # GitHub configuration
-│   └── workflows/           # GitHub Actions workflows
-├── docs/                    # Documentation
-└── README.md                # This file
-```
+### Phase 1: Project Setup and Infrastructure
+- [x] ✅ Set up basic React application with TypeScript
+  - ✅ Configure tsconfig.json for React
+  - ✅ Create initial application structure
+  - ✅ Implement path aliases (@/ for src/ and @packages/ for packages/)
+- [x] ✅ Migrate build system from Webpack to Rspack
+  - ✅ Replace webpack configuration with Rspack's configuration
+  - ✅ Update build scripts and dependencies
+  - ✅ Verify existing functionality works with the new build system
+- [x] ✅ Restructure project to use conventional src/ directory
+  - ✅ Create src/pages, src/routes, src/stores directories
+  - ✅ Move components to appropriate locations
+  - ✅ Update import paths and configurations
 
-## Getting Started
+### Phase 2: Core Features Implementation
+- [x] ✅ Implement client-side routing with React Router
+  - ✅ Set up router configuration
+  - ✅ Create protected routes for authentication
+  - ✅ Handle navigation between pages
+- [x] ✅ Set up state management with MobX
+  - ✅ Create observable stores (authStore, clicksStore)
+  - ✅ Connect components with observer HOC
+  - ✅ Implement actions and computed values
+- [x] ✅ Implement basic authentication flow
+  - ✅ Create login page
+  - ✅ Handle login/logout state
+  - ✅ Protect routes based on authentication status
+- [x] ✅ Integrate Material UI components
+  - ✅ Set up Material UI provider
+  - ✅ Use basic components
+  - ✅ Create a theme and design system
 
-### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn
-- Git
+### Phase 3: Planned Next Steps
+- [ ] Enhance authentication features
+  - [ ] Build proper login/registration forms
+  - [ ] Set up JWT token management
+  - [ ] Improve protected routes implementation
+- [ ] Set up monorepo package structure
+  - [ ] Implement micro-frontend architecture (build-time approach)
+  - [ ] Create reusable components in the shared package
+- [ ] Add testing infrastructure
+  - [ ] Configure Jest and React Testing Library
+  - [ ] Write unit tests for components
+  - [ ] Set up integration testing
+- [ ] Implement CI/CD pipeline
+  - [ ] Add linting with ESLint
+  - [ ] Configure GitHub Actions
+  - [ ] Set up automatic builds and testing
 
-> 💡 **Note**: This project uses a monorepo structure with packages for each micro-frontend. We'll use npm workspaces to manage dependencies across all packages.
-
-### Installation
-
-1. The project is already initialized. Navigate to the project directory:
-```bash
-cd learn-front-end
-```
-
-2. Install dependencies
-```bash
-npm install
-# or
-yarn install
-```
-
-3. Start the development server
-```bash
-npm start
-# or
-yarn start
-```
-
-4. Open your browser and navigate to `http://localhost:3000`
-
-## Development Workflow
-
-### Creating a New Micro-frontend
-
-1. Create a new package in the `packages` directory
-```bash
-cd packages
-mkdir new-feature
-cd new-feature
-npm init -y
-```
-
-2. Set up TypeScript configuration
-```bash
-cp ../../config/typescript/tsconfig.json ./
-```
-
-3. Configure webpack for the new micro-frontend
-```bash
-cp ../../config/webpack/webpack.config.js ./
-```
-
-4. Add the new micro-frontend to the container application
-
-### Running Tests
-
-```bash
-npm test
-# or
-yarn test
-```
-
-### Building for Production
-
-```bash
-npm run build
-# or
-yarn build
-```
-
-## Learning Path
-
-### Phase 1: Core Technologies
-- [ ] Set up basic React application with TypeScript
-  - Configure tsconfig.json for React
-  - Set up webpack for development
-  - Create a simple Hello World app
-- [ ] Create simple components and understand component lifecycle
-  - Functional components with hooks
-  - TypeScript interfaces for props
-  - Component composition patterns
-- [ ] Implement routing with React Router
-  - Set up router configuration
-  - Create protected routes for authentication
-  - Implement nested routes
-- [ ] Set up state management with MobX
-  - Create observable stores
-  - Connect components with observer HOC
-  - Implement actions and computed values
-- [ ] Configure Jest for unit and integration testing
-  - Write tests for components
-  - Create mocks for dependencies
-  - Set up React Testing Library
-
-### Phase 2: UI Development
-- [ ] Integrate Material UI components
-  - Set up Material UI provider
-  - Use basic components (Button, TextField, etc.)
-  - Implement form validation
-- [ ] Customize theme using Emotion
-  - Create a custom theme
-  - Use styled components with Emotion
-  - Implement dark/light mode switching
-- [ ] Implement responsive design patterns
-  - Use Grid and Box components
-  - Implement responsive breakpoints
-  - Create mobile-first layouts
-- [ ] Create reusable styled components
-  - Build a component library
-  - Document components with Storybook
-  - Implement accessibility standards
-
-### Phase 3: Micro-frontend Architecture
-- [ ] Convert the monolithic app to a micro-frontend architecture
-  - Identify boundaries between features
-  - Plan the shared state strategy
-  - Define communication protocols
-- [ ] Set up the container application
-  - Create the application shell
-  - Implement dynamic module loading
-  - Set up routing between micro-frontends
-- [ ] Create independent micro-frontends
-  - Authentication module
-  - Dashboard module
-  - Feature-specific modules
-- [ ] Implement communication between micro-frontends
-  - Use custom events
-  - Implement shared state solution
-  - Create API contracts between modules
-
-### Phase 4: Build and Deployment
-- [ ] Configure webpack for development and production
-  - Optimize build for production
-  - Set up environment variables
-  - Implement bundle analysis
+### Phase 4: Feature Development (Planned)
+- [ ] Create a dashboard module
+  - [ ] Implement data visualization components
+  - [ ] Create interactive dashboard widgets
+  - [ ] Set up mock API data for development
+- [ ] Enhance UI/UX
+  - [ ] Customize theme using Emotion
+  - [ ] Implement responsive design patterns
+  - [ ] Create reusable styled components
 - [ ] Set up code splitting and lazy loading
-  - Use React.lazy and Suspense
-  - Implement route-based code splitting
-  - Optimize loading states
-- [ ] Implement GitHub Actions for CI/CD
-  - Create build workflows
-  - Implement linting and testing checks
-  - Set up automated deployments
-- [ ] Add automated testing in the pipeline
-  - Unit and integration tests
-  - End-to-end testing with Cypress
-  - Performance testing
+  - [ ] Use React.lazy and Suspense
+  - [ ] Implement route-based code splitting
+  - [ ] Optimize loading states
 
 ## Resources
 
@@ -251,6 +148,7 @@ yarn build
 
 ### Build Tools
 - [Webpack Documentation](https://webpack.js.org/concepts/)
+- [Rspack Documentation](https://www.rspack.dev/)
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
 - [Jest Documentation](https://jestjs.io/docs/getting-started)
 
@@ -259,19 +157,19 @@ yarn build
 - [Material UI Documentation](https://mui.com/getting-started/installation/)
 - [Emotion Documentation](https://emotion.sh/docs/introduction)
 
-## Implementation Schedule
+## Implementation Progress
 
-| Week | Focus Area | Goals |
-|------|------------|-------|
-| 1    | Project Setup | Set up monorepo, configure TypeScript and webpack |
-| 2    | Core React | Create basic components, implement routing |
-| 3    | State Management | Implement MobX, create stores |
-| 4    | UI Development | Integrate Material UI, customize theme |
-| 5    | Micro-frontends | Set up container, create first micro-frontend |
-| 6    | Advanced Features | Implement authentication, dashboard |
-| 7    | Testing | Set up Jest, write tests |
-| 8    | Build & Deploy | Configure production build, CI/CD |
-
+| Area            | Status               | Notes                                                                 |
+|-----------------|----------------------|-----------------------------------------------------------------------|
+| Project Setup   | &#10004; Complete    | Set up TypeScript, restructured to src/ directory, migrated to Rspack |
+| Core React      | &#10004; Complete    | Created basic components, implemented routing with react-router-dom   |
+| State Management| &#10004; Complete    | Implemented MobX with stores for auth and clicks                      |
+| Authentication  | &#10004; Partial     | Basic login/logout flow works, JWT implementation pending             |
+| UI Framework    | &#10004; Complete    | Integrated Material UI with basic components and theme                |
+| Micro-frontends | &#10226; In Progress | Initial packages directory created, implementation pending            |
+| Testing         | &#9200;  Pending     | Jest and React Testing Library setup planned                          |
+| CI/CD           | &#9200;  Pending     | GitHub Actions configuration planned                                  |
+ 
 ## Contribution
 This is a personal learning project, but suggestions and feedback are always welcome!
 
