@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes as RouterRoutes, Route, Navigate } from 'react-router-dom';
-import Login from '@/pages/Login';
-import App from '@/pages/App';
+import Login from 'auth';
+import App from 'dashboard';
 import ProtectedRoute from './ProtectedRoute';
 
 const Routes: React.FC = () => {

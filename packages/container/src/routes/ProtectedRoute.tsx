@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navigate, Outlet } from 'react-router-dom';
 import { observer } from 'mobx-react-lite';
-import { useStores } from 'shared/stores';
+import { useStores } from 'shared';
 
 const ProtectedRoute: React.FC = observer(() => {
     const { authStore } = useStores();

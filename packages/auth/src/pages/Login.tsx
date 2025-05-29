@@ -16,8 +16,8 @@ import { LockOutlined } from '@mui/icons-material';
 import React, { useState } from 'react';
 import { useNavigate} from 'react-router-dom';
 import { observer } from 'mobx-react-lite';
-import { useStores} from 'shared/stores';
-import theme from 'shared/theme';
+import { useStores} from 'shared';
+import { theme } from 'shared';
 
 
 
