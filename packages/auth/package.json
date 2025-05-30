@@ -2,7 +2,7 @@
   "name": "auth",
   "version": "1.0.0",
   "description": "auth components",
-  "main": "dit/index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "devDependencies": {},
   "scripts": {
