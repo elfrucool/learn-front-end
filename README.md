@@ -102,13 +102,15 @@ Through this project, I aim to:
   - ✅ Create a theme and design system
 
 ### Phase 3: Planned Next Steps
+- [ ] Implement micro-frontend architecture
+  - ✅ Create reusable components in the shared package
+  - ⟲ Implement micro-frontend architecture (build-time approach)
+  - [ ] Migrate to runtime approach
+  - [ ] Implement module federation
 - [ ] Enhance authentication features
   - [ ] Build proper login/registration forms
   - [ ] Set up JWT token management
   - [ ] Improve protected routes implementation
-- [ ] Set up monorepo package structure
-  - [ ] Implement micro-frontend architecture (build-time approach)
-  - [ ] Create reusable components in the shared package
 - [ ] Add testing infrastructure
   - [ ] Configure Jest and React Testing Library
   - [ ] Write unit tests for components
