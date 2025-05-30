@@ -1,0 +1,15 @@
+# Work Journal - 2025-05-29
+
+## Today's Progress
+
+- Continue moving towards micro-frontend architecture with build-time approach:
+    - make each micro-frontend able to run standalone and combined in container:
+        - ✅ update shared library and micro-frontend package.json:
+            - ✅ entry point is now dist/index.js
+            - ✅ types is now dist/index.d.ts
+            - ✅ added build/starte
+        - update shared library and micro-frontend rspack.config.js:
+        - update container package.json:
+        - update container rspack.config.js:
+        - should I add index.html to each micro-frontend ?
+        - ?? update root package.json and rspack.config.js ???

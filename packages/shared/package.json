@@ -2,9 +2,13 @@
   "name": "shared",
   "version": "1.0.0",
   "description": "shared components",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "devDependencies": {},
   "scripts": {
+    "build": "rspack build",
+    "watch": "rspack build --watch",
+    "clean": "rm -rvf dist",
     "test": "echo 'not implemented yet'"
   },
   "author": "",
