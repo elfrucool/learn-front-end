@@ -3,6 +3,8 @@
   - ✅ Set up each package with its own package.json and tsconfig.json
   - ✅ Configure workspace dependencies between packages
   - implement micro-frontend architecture following build-time approach
+  - implement micro-frontend architecture with run-time approach
+  - implement micro-frontend architecture with module-federation
 2. Enhance the basic React application:
   - ✅ Add a login-page, handle state of being login/not-login switching between main page and login page
   - ✅ Implement routing with react-router-dom
