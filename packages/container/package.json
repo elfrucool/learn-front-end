@@ -5,6 +5,10 @@
   "main": "src/index.tsx",
   "devDependencies": {},
   "scripts": {
+    "build": "rspack build",
+    "watch": "rspack build --watch",
+    "clean": "rm -rvf dist",
+    "start": "rspack serve",
     "test": "echo 'not implemented'"
   },
   "author": "",
