@@ -6,8 +6,8 @@
   "types": "dist/index.d.ts",
   "devDependencies": {},
   "scripts": {
-    "build": "rspack build",
-    "watch": "rspack build --watch",
+    "build": "rspack build --config rspack.config.library.js",
+    "watch": "rspack build --config rspack.config.library.js --watch",
     "clean": "rm -rvf dist",
     "test": "echo 'not implemented yet'"
   },

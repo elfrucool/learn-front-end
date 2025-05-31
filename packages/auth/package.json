@@ -6,10 +6,10 @@
   "types": "dist/index.d.ts",
   "devDependencies": {},
   "scripts": {
-    "build": "rspack build",
-    "watch": "rspack build --watch",
-    "clean": "rm -rvf dist",
-    "start": "rspack serve",
+    "build": "rspack build --config rspack.config.library.js",
+    "watch": "rspack build --config rspack.config.library.js --watch",
+    "clean": "rm -rvf dist dist-standalone",
+    "start": "rspack serve --config rspack.config.standalone.js",
     "test": "echo 'not implemented'"
   },
   "author": "",
